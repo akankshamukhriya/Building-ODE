@@ -19,6 +19,7 @@ In our work, we use six base detectors: Average k-NN, LOF, KDEOS, COF, LDOF, and
 Following are the state-of-art member selection methods for outlier detection ensembles, which we use in this work to validate performance of the AnD-SELECT, described as corresponding .R files
 
 (1) Vselect.R: Vertical Selection Method for Ensembles for Outlier Detection [Rayana et. al. 2015]
+
 (2) Boostselect.R:  Unsupervised Boosting-based Member Selection for Outlier Detection [Campos 2018]
 
 3. 
