@@ -8,3 +8,30 @@ Data File :
 The Data.zip file contains eleven benchmark datasets, with the pre-processed versions, as used in the paper. All these files are in form of Comma Separated Values (.csv). 
 The benchmark datasets used in the paper are:
 ALOI, PenDigits, ANN-Thyroid, SatImage, PageBlocks, OpticalDigits, SpamBase, Waveform, InternetAds, Pima, and Arrhythmia. For some of these we use original versions given in UCI repository, while for others we use some versions given in DAMI repository: https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/. For all the versions, we present details in the paper, and the same versions are attached here.
+
+
+Following are the list of .R files required to run the ensemble selection approach:
+
+1. Base Outlier Detection Methods: 
+In our work, we use six base detectors: Average k-NN, LOF, KDEOS, COF, LDOF, and LDF detectors. Other than for Average k-NN, we use ELKI framework to execute rest five detectors on eleven benchmark datasets, used in the manuscript. ELKI is an open source software, and the link, as provided in the paper, is: https://elki-project.github.io/algorithms/
+
+2. Existing Member Selection Approaches for Outlier Detection Ensembels:
+Following are the state-of-art member selection methods for outlier detection ensembles, which we use in this work to validate performance of the AnD-SELECT, described as corresponding .R files
+
+(1) Vselect.R: Vertical Selection Method for Ensembles for Outlier Detection [Rayana et. al. 2015]
+(2) Boostselect.R:  Unsupervised Boosting-based Member Selection for Outlier Detection [Campos 2018]
+
+3. 
+
+
+Evaluation:
+AveragePrecision.m (returns average precision, precision and recall)
+
+
+How to run?
+execute runEnsemble.m file which serially runs 
+- FeatureExtractionChallengeNetwork.m (features are extracted for sample rate 600 seconds)
+- individual base algorithms (EBED.m, PTSAD.m, SpiritTest.m, ASED.m MAED.m) for feature unweighted degree (UW) [undirected graph feature] 
+- five different ensemble approaches [runFull.m, runSELECT.m (SELECT_H), runSELECT.m (SELECT_V), runDivE.m, runULARA.m]
+- comparing the results of the different ensemble approaches by calculating average precision given the ground truth of the dataset
+- Characterization is done on a sample anomalous time tick 377 to find anomalous nodes and different ensemble results are compared similarly as the event detection phase
