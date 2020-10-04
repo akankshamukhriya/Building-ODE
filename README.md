@@ -21,7 +21,14 @@ Following are the state-of-art member selection methods for outlier detection en
 
 (2) Boostselect.R:  Unsupervised Boosting-based Member Selection for Outlier Detection [Campos et. al. 2018]
 
-3. 
-
-
-How to run?
+3. How to run?
+ - Load any of the dataset you want to evaluate for, from Data.zip, in your R-workspace.
+ - For that datasets, which you want to evaluate on, Run base methods: Average k-NN (or Weighted k-NN in ELKI), And LOF using ELKI-framework interface. 
+   These csv data files are ready in the form to run as per ELKI-format.
+ - Save their resultant scores (last column in their resultant Outlier Score Files ('method_name'-outlier_order.txt-file, e.g., lof-outlier_order.txt) as a matrix in 
+   your R-workspace.
+ - Add all the score lists in the ensemble input scorelist: SCORE_LIST_SET (as mentioned in Main.R). We use 1-11 lists numbers for 11 variants of Average k-NN, 
+   and 1-22 for LOF varaints. 
+ - In Main.R Set the desired input parameters, or use the default values which we have used at input, as given in Main.R. 
+   The generated resultant ensemble ROC AUC scores correspond to - V-select, Boost-select, and AnD-SELECT, respectively.
+   
