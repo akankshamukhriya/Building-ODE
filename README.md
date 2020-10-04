@@ -1,4 +1,4 @@
-# Details of this work are under construction and this work is under process.
+# Details of this work are under progress.
 
 We here submit the Data and Code files, necessary to interpret, replicate, and build on the findings reported in the paper (under review for publication) titled as "Building Outlier Detection Ensembels by Selective Parameterizations of Heterogeneous Methods".
 
