@@ -20,7 +20,7 @@ Following are the state-of-art member selection methods for outlier detection en
 
 (1) Vselect.R: Vertical Selection Method for Ensembles for Outlier Detection [Rayana et. al. 2015]
 
-(2) Boostselect.R:  Unsupervised Boosting-based Member Selection for Outlier Detection [Campos 2018]
+(2) Boostselect.R:  Unsupervised Boosting-based Member Selection for Outlier Detection [Campos et. al. 2018]
 
 3. 
 
