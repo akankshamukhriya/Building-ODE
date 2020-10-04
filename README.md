@@ -25,14 +25,4 @@ Following are the state-of-art member selection methods for outlier detection en
 3. 
 
 
-Evaluation:
-AveragePrecision.m (returns average precision, precision and recall)
-
-
 How to run?
-execute runEnsemble.m file which serially runs 
-- FeatureExtractionChallengeNetwork.m (features are extracted for sample rate 600 seconds)
-- individual base algorithms (EBED.m, PTSAD.m, SpiritTest.m, ASED.m MAED.m) for feature unweighted degree (UW) [undirected graph feature] 
-- five different ensemble approaches [runFull.m, runSELECT.m (SELECT_H), runSELECT.m (SELECT_V), runDivE.m, runULARA.m]
-- comparing the results of the different ensemble approaches by calculating average precision given the ground truth of the dataset
-- Characterization is done on a sample anomalous time tick 377 to find anomalous nodes and different ensemble results are compared similarly as the event detection phase
