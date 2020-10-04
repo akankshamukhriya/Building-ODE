@@ -41,5 +41,5 @@ Following are the state-of-art member selection methods for outlier detection en
        and 1-22 for LOF varaints. 
  - Now, execute the file: "Main.R". Other than 2-Mandatory-Inputs: SCORE_LIST_SET and DATA_LABELS, we in this file have set the default values for other input parameters. 
    Generated resultant ensemble ROC AUC scores correspond to - V-select, Boost-select, and AnD-SELECT, for all four thresholds as per the paper (under review 
-   for publication): th_1, th_2, th_3, and th_4, respectively.
+   for publication), respectively.
    
